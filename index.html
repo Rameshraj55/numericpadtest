@@ -6,7 +6,7 @@
   </head>
 
   <body>
-    <h1>Hello World!--updated1122</h1>
+    <h1>Hello World!--updated112233</h1>
     <div class="otp-modal-wrapper hidden" id="otpModal">
         <div class="otp-modal ">
             <div class="otp-container">
@@ -15,13 +15,13 @@
                     <p>One Time Password (OTP) has been sent via SMS to +91-******<span id="phoneNumber"></span>.</p>
                     <p>Enter the OTP below to verify it.</p>
                 </div>
-                <div id="otpValue" class="otp-inputs" inputmode="numeric">
-                    <input type="text" maxlength="1" oninput="validateNumber(this)"  >
-                    <input type="text" maxlength="1" oninput="validateNumber(this)"  >
+                <div id="otpValue" class="otp-inputs" >
+                    <input type="text" maxlength="1" oninput="validateNumber(this)" inputmode="numeric" >
+                    <input type="text" maxlength="1" oninput="validateNumber(this)"  inputmode="numeric">
                     <input type="text" maxlength="1" oninput="validateNumber(this)" >
                     <input type="text" maxlength="1" oninput="validateNumber(this)"  >
                     <input type="text" maxlength="1" oninput="validateNumber(this)"  >
-                    <input type="text" maxlength="1" oninput="validateNumber(this)" >
+                    <input type="text" maxlength="1" oninput="validateNumber(this)"  >
                 </div>
                 <div id="otp-error" class="fail hidden">Invalid OTP,Please check and try again.</div>
                 <button id="resendButton" onclick="resentOtp()" disabled>Resend OTP</button>
